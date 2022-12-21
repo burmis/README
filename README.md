@@ -100,10 +100,10 @@ Below is some information regarding financials.
 
 > Billing is done by sending an invoice to [Mark](mailto:mark@burmis.ca). This step isn't standardized but make sure you use something professional. Personally, I just found a nice template from Google docs.
 
-- Use the Toggl Interface as described [here](#Toggl) to view your tracked time 
+- Use the Toggl Interface as described [here](#toggl) to view your tracked time 
 - Your invoice should look something similar to this...
 - You NEED to have your...
-  - [GST Number](#GSTNumber) IMPORTANT
+  - [GST Number](#gst-number) IMPORTANT
   - Contact Information
     - Address
     - Phone Number
@@ -156,7 +156,7 @@ If you are using Visual Studio Code as most of us do...
 
 ### Prettier/Code Linting
 
-> Most of our projects include some sort of built in project linter or formatting tool. It is wise to run these commands before committing your code, as GitHub will get angry at you if you fail the [tests](#Tests).
+> Most of our projects include some sort of built in project linter or formatting tool. It is wise to run these commands before committing your code, as GitHub will get angry at you if you fail the [tests](#tests).
 >
 > Since this will be project specific, it is hard to write a clear example. Please ask a colleague for more information on your specific project! Most project > will have some sort of script to check for these problems, most commonly, ```yarn lint```.
 
@@ -168,20 +168,20 @@ If you are using Visual Studio Code as most of us do...
 
 This is what a typical task looks like from beginning to end. 
 
-- An [issue](#Issues) in your repository has been created, and marked as TODO.
-- You view it on the [project board](#ProjectBoard)  
-- You are assigned that [issue](#Issues) or decide you want to tackle it. 
-- You make a [branch](#Branching) off of ```main``` in your repo. 
+- An [issue](#issues) in your repository has been created, and marked as TODO.
+- You view it on the [project board](#project-board)  
+- You are assigned that [issue](#issues) or decide you want to tackle it. 
+- You make a [branch](#branching) off of ```main``` in your repo. 
 - You write your code, fix the issue, make the adjustments
-- You ensure this new code passes [lints](#Prettier/CodeLinting) and [tests](#Tests)
-- Commit the new code to YOUR [branch](#Branching), not ```main```
-- You create a new draft [pull request](#PullRequests)
-- Select a [reviewer](#Reviews)
-- Fill in [pull request](#PullRequests) information
-- Mark [pull request](#PullRequests) as ready for [review](#Reviews), and await
-- If [pull request](#PullRequests) is approved without changes, [Squash and Merge!](#PullRequests)
-- If [change requests](#PullRequests) are made, review changes, and adjust until approved or closed
-- Adjust the [project board!](#ProjectBoard)
+- You ensure this new code passes [lints](#prettiercode-linting) and [tests](#tests)
+- Commit the new code to YOUR [branch](#branching), not ```main```
+- You create a new draft [pull request](#pull-requests)
+- Select a [reviewer](#reviews)
+- Fill in [pull request](#pull-requests) information
+- Mark [pull request](#pull-requests) as ready for [review](#reviews), and await
+- If [pull request](#pull-requests) is approved without changes, [Squash and Merge!](#pull-requests)
+- If [change requests](#pull-requests) are made, review changes, and adjust until approved or closed
+- Adjust the [project board!](#project-board)
 
 ---
 
@@ -193,7 +193,7 @@ NOTE: Please ask questions to any team members for clarification at ANY point of
 
 > Many projects include handy little Github actions and testing scripts that automatically catch us from merging or committing broken code.
 
-Usually a project will include a testing script that you can run to check for any blaring errors in your branch before committing it. This is a good habit to form as it will save some headaches during [pull requests](#PullRequests). For example, ```yarn test```. Make sure these test pass before committing your code!
+Usually a project will include a testing script that you can run to check for any blaring errors in your branch before committing it. This is a good habit to form as it will save some headaches during [pull requests](#pull-requests). For example, ```yarn test```. Make sure these test pass before committing your code!
 
 Git hub actions will usually run on push, but othertimes as well. NO reviewer will approve a PR with failing tests, so make sure they are fixed before hand. Usually, your terminal will give you some feedback on why they are failling. Github Actions can also be explored here in a terminal style. 
 
@@ -201,17 +201,17 @@ Git hub actions will usually run on push, but othertimes as well. NO reviewer wi
 
 > Issues are a handy Github feature to keep track of what needs to be done or fixed on a repository.
 
-Typically, an issue will include information about the task, a checklist of what needs to be completed, instructions on how to reproduce a bug, or just a general walk through of the task itself. This is usually where you can answer the age old question, "What can I do?" Issues are held within the the repository for viewing, or on the [project board](#ProjectBoard).
+Typically, an issue will include information about the task, a checklist of what needs to be completed, instructions on how to reproduce a bug, or just a general walk through of the task itself. This is usually where you can answer the age old question, "What can I do?" Issues are held within the the repository for viewing, or on the [project board](#project-board).
 
 - If you decide to tackle a particular issue, please assign it to yourself! This helps the team track who is working on what. 
-- After you are assigned an issue, please view [branching](#Branching)
+- After you are assigned an issue, please view [branching](#branching)
 ---
 
 ### Branching
 
 > Burmis studios has a few standards regarding creating a branch.
 
-When you are assigned an issue, the [workflow](#Workflow) requires a new branch. 
+When you are assigned an issue, the [workflow](#workflow) requires a new branch. 
 
 - Always branch off ```main``` in your related repository.
 - Name your branch according to the issue. (ex. issueNumber-branch-name)
@@ -220,25 +220,25 @@ When you are assigned an issue, the [workflow](#Workflow) requires a new branch.
 
 ### Pull Requests
 
-> Burmis never commits directly to main. All code changes are done through [branches](#Branches) and [pull requests](#PullRequests).
+> Burmis never commits directly to main. All code changes are done through [branches](#branches) and [pull requests](#pull-requests).
 
 Once your issue has been completed, its time to make a pull request! This can be a little intimidating at first, but gets easier with time. There a few steps you need to follow.
 
-- Make sure all of your code passes [test](#Tests) and [lints](#Prettier/CodeLinting)
-- Publish your [issue branch](#Branching) to remote. (This may already be complete)
+- Make sure all of your code passes [test](#tests) and [lints](#prettiercode-linting)
+- Publish your [issue branch](#branching) to remote. (This may already be complete)
 - The repo will have an indicator stating "There have been recent commits to ```issuenumber-issue-branch-name```. Compare and Pull Request?"
 - The button attached to that indicator will create a new PR!
 
 This is where the important specification follow, so please follow this process closely. 
 
-- Create a Draft Pull Request immediately. This starts the Github action [testing](#Tests) right away, and you won't have to wait 
+- Create a Draft Pull Request immediately. This starts the Github action [testing](#tests) right away, and you won't have to wait 
 - Edit the PR and fill out ALL of the relevant details. Thankfully, there is usually a template. Below is an example...
   - NOTE: If you use ```Fixes #issueNumber``` in your PR description your issue will automatically close when your branch is merged.
 - Select a reviewer
   - All PR's require a reviewer. Try to rotate your reviewers so that everyone is familiar with multiple sections of the codebase 
-- Await all [tests](#Tests) to pass and make sure they succeed
+- Await all [tests](#tests) to pass and make sure they succeed
 - If it is all green and succeeded, mark PR as Ready for Review!
-- Update [project board](#ProjectBoard)
+- Update [project board](#project-board)
 
 > Sometimes, we nail it on the first try. If your PR is approved, go ahead and merge your PR!
 
@@ -252,7 +252,7 @@ This is where the important specification follow, so please follow this process 
 
 > Project board is a rather new feature to Github that Burmis uses to keep track of workflow on projects. 
 
-Within the project board, you can find all of the same issues within the "[Issues](#Issues)" section of a repository. The main difference however, is the nice click and drag interface that lets us categorize tasks into different phases of developement. The interface is very self explanitory. Clicking on an [Issue](#Issues) will show more details about it, and you are able to click and drag them into different sections accordingly. Please keep this board up to date as you complete and move through tasks!
+Within the project board, you can find all of the same issues within the "[Issues](#issues)" section of a repository. The main difference however, is the nice click and drag interface that lets us categorize tasks into different phases of developement. The interface is very self explanitory. Clicking on an [Issue](#Issues) will show more details about it, and you are able to click and drag them into different sections accordingly. Please keep this board up to date as you complete and move through tasks!
 
 Some categories include... 
 
@@ -260,7 +260,7 @@ Some categories include...
 - ```TODO``` (Ready to go! We are clear and ready for a developer to begin working on this issue.)
 - ```Blocked``` (The worst! We have some sort of currently insurpassable blockage that prevents work on this issue.)
 - ```In Progress``` (Whoever is listed as "Assigned" is currently working on this issue. Beat you to it!)
-- ```Ready for Review``` (This issue currently has an open [PR](###PullRequests) that is awaiting review! Maybe yours!)
+- ```Ready for Review``` (This issue currently has an open [PR](#pull-requests) that is awaiting review! Maybe yours!)
 - ```Done``` (This task has been completed. Hooray!) 
 
 As you move through your task list or issue, please return to and update this board accordingly. It helps keep everyone on the same page!
