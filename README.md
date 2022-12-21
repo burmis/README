@@ -1,6 +1,29 @@
 # Welcome to Burmis Studios!
 
-Within this readme is some tips and set up required to be productive with Burmis. This includes tooling, account setup, and code-base standards. Please refer any extra or unclear questions to [Mark Bennett](mailto:mark@burmis.ca)!
+Within this readme is some tips and set up required to be productive with Burmis. This includes tooling, account setup, and code-base standards. This guide will not include absolutely everything! Please refer any extra or unclear questions to [Mark](mailto:mark@burmis.ca) or an appropriate team member!
+
+---
+
+## Contents
+
+- [Accounts](#accounts)
+  - [Gmail/Gchat/Gmeet](#gmailgchatgmeet)
+  - [1Password](#1password)
+  - [Toggl](#toggl)
+- [Payment Information](#payment-information)
+  - [GST Number](#gst-number)
+  - [Billing](#billing)
+- [Code Standards](#code-standards)
+  - [End of File](#end-of-file)
+  - [End of Line](#end-of-line)
+  - [Code Golf](#dont-play-code-golf)
+  - [Prettier/Code Linting](#prettiercode-linting)
+  - [Workflow](#workflow)
+  - [Tests](#tests)
+  - [Issues](#issues)
+  - [Branching](#branching)
+  - [Pull Requests](#pull-requests)
+  - [Project Board](#project-board)
 
 ---
 
@@ -18,23 +41,29 @@ Burmis studios uses software solutions for most business tracking and access. Be
 
 Since it is not totally obvious within Gmail, this is a convienent way to set up Google Chat.
 
+![image](https://user-images.githubusercontent.com/48274410/208812226-7d8826da-0bbc-4977-a4c0-68a504e7550e.png)
+
 - Click the "Settings" cog within the Gmail inbox. 
 - Select "Apps in Gmail."
 - Show "Chat and Meet in Gmail."
 
-Now all company communication is in one convienent place! 
+![image](https://user-images.githubusercontent.com/48274410/208812293-eedf8470-923f-4a33-a3ba-1fa0fa2e2ae4.png)
+
+It should look like this afterwards. Now all company communication is in one convienent place! 
 
 ### 1Password 
 
 > Used for access to different company software and development information, for example, TailWindUI accounts, ENV variables, and testing accounts for Swype.
 >
-> [Mark Bennett](mailto:mark@burmis.ca) will need to give you access to this, but you can go ahead and load it into your browser now. 
+> [Mark](mailto:mark@burmis.ca) will need to give you access to this, but you can go ahead and load it into your browser now. 
 
 Please translate according to your own browser! These instructions will likely be similar.
 
 - Navigate to the browser "Add-ons" or "Extensions"
 - Search for and install 1Password
-- Set up account and await access from Mark. 
+- Set up account and await access from Mark.
+
+![image](https://user-images.githubusercontent.com/48274410/208812387-c35374dd-6420-4640-8bd2-2415e08ad938.png)
 
 More information about accounts and how it works can be found in the [docs!](https://support.1password.com/explore/get-started/)
 
@@ -48,13 +77,15 @@ NOTE: Please only use these accounts for activities related to Burmis Studios.
 
 ### Toggl 
 
-> Toggl is a convientent way to track your time against company projects for invoicing later. This will also require granted access from [Mark Bennett](mailto:mark@burmis.ca). 
+> Toggl is a convientent way to track your time against company projects for invoicing later. This will also require granted access from [Mark](mailto:mark@burmis.ca). 
 
 Once again, please translate according to your own browser! These instructions will likely be similar.
 
 - Navigate to the browser "Add-ons" or "Extensions"
 - Search for and install Toggl Track
 - Set up account, preferably the Gmail account you used or set up earlier
+
+![image](https://user-images.githubusercontent.com/48274410/208812464-dc3a7bc3-a7a0-4cf5-a1a7-748b3331a4e8.png)
 
 More information about accounts and how it works can be found on their [website!](https://toggl.com/?cq_src=google_ads&cq_cmp=15031885853&cq_term=&cq_plac=&cq_net=x&cq_plt=gp&utm_term=&utm_campaign=%5BPM%5D+-+Region+1+-+Generic+-+Billable+Events+-+Time+Tracking+Done+Right&utm_source=adwords&utm_medium=ppc&hsa_acc=8476800569&hsa_cam=15031885853&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiA14WdBhD8ARIsANao07gwUIRvIfdcGgNzID8ZSzGTudSGT0QBxZRNwTJ--FPH94CsrhG8TyEaArQ1EALw_wcB)
 
@@ -69,6 +100,8 @@ Once your account has been set up, you can begin tracking invoicable time as fol
 - Select whether the time is billable or not (Most likely is)
 - Click Done!
 
+![image](https://user-images.githubusercontent.com/48274410/208812512-af8ddea0-7567-4f36-aa65-50f3a178da72.png)
+
 Your time is now being tracked by the second (Just time, its not as sinister as it sounds). 
 
 --- 
@@ -80,6 +113,8 @@ NOTE: Mistakes happen. Sometimes we get up from our PC, forget to pause our time
 - You can now drag, add, delete, adjust, and move time around by clicking on logged time slots like the Greek God Chronos
 
 This interface is also what you will want to use for invoicing purposes. It will display all of your tracked time in a calendar, which can easily be translated to a formal invoice for billing, as described below. 
+
+![image](https://user-images.githubusercontent.com/48274410/208812562-395428ab-3013-45c1-8aaa-8e24d060eb13.png)
 
 ---
 
@@ -111,6 +146,9 @@ Below is some information regarding financials.
   - Totaled up hours
   - Payment details (ie. Where do you want your money sent?)
 - Below is a general example...
+
+![image](https://user-images.githubusercontent.com/48274410/208813192-97825471-8265-4940-a19a-565e25a714cb.png)
+
 - Send your invoice to [Mark](mailto:mark@burmis.ca)
 
 --- 
@@ -146,11 +184,25 @@ export default ExampleFunction;
 
 If you are using Visual Studio Code as most of us do...
 
-- Steps here. 
+- Bottom right of VSCode...
+
+![image](https://user-images.githubusercontent.com/48274410/208813328-6efce83f-1d53-4e20-92cd-2695d3b7641f.png)
+
+![image](https://user-images.githubusercontent.com/48274410/208813359-342d2bb2-ef32-4848-af7b-9ffb0bca396d.png)
+
+OR 
+
+- CNTRL + SHIFT + P
+
+![image](https://user-images.githubusercontent.com/48274410/208813607-311e9b9a-cf32-49cb-95ac-4b4236519630.png)
+
+![image](https://user-images.githubusercontent.com/48274410/208813359-342d2bb2-ef32-4848-af7b-9ffb0bca396d.png)
 
 ### Don't Play Code Golf
 
 > We have multiple developers working on the same project at times. While it may be impressive to reduce a 50 line function to a heiroglypic one liner, it is usually not fun for the next dev who may have to decipher it. Please save it for Leetcode! (and send it around so we can marvel at it)
+
+Read this and cry! [Code Golf](https://dev.to/emnudge/js-code-golfing-how-to-ruin-everyone-s-day-40h3)
 
 ---
 
@@ -201,9 +253,14 @@ Git hub actions will usually run on push, but othertimes as well. NO reviewer wi
 
 > Issues are a handy Github feature to keep track of what needs to be done or fixed on a repository.
 
+![image](https://user-images.githubusercontent.com/48274410/208813869-fe128cc0-1d82-49c3-b330-c1d82f7b44a9.png)
+
 Typically, an issue will include information about the task, a checklist of what needs to be completed, instructions on how to reproduce a bug, or just a general walk through of the task itself. This is usually where you can answer the age old question, "What can I do?" Issues are held within the the repository for viewing, or on the [project board](#project-board).
 
 - If you decide to tackle a particular issue, please assign it to yourself! This helps the team track who is working on what. 
+
+![image](https://user-images.githubusercontent.com/48274410/208813970-da50b79f-6ea8-40ad-afd3-5c75804e9a68.png)
+
 - After you are assigned an issue, please view [branching](#branching)
 ---
 
@@ -232,17 +289,31 @@ Once your issue has been completed, its time to make a pull request! This can be
 This is where the important specification follow, so please follow this process closely. 
 
 - Create a Draft Pull Request immediately. This starts the Github action [testing](#tests) right away, and you won't have to wait 
+
+![image](https://user-images.githubusercontent.com/48274410/208814216-f9917ba6-3eda-4472-b1c1-e45dde8dceb5.png)
+
 - Edit the PR and fill out ALL of the relevant details. Thankfully, there is usually a template. Below is an example...
   - NOTE: If you use ```Fixes #issueNumber``` in your PR description your issue will automatically close when your branch is merged.
 - Select a reviewer
-  - All PR's require a reviewer. Try to rotate your reviewers so that everyone is familiar with multiple sections of the codebase 
+
+![image](https://user-images.githubusercontent.com/48274410/208814297-d8ad16d0-c392-41bc-a119-17e3116aa0d6.png)
+
+  - All PR's require a reviewer. Try to rotate your reviewers so that everyone is familiar with multiple sections of the codebase
+
+![image](https://user-images.githubusercontent.com/48274410/208814902-f9f1fc76-8fb4-4a82-9155-10e559dd0d6f.png)
+
 - Await all [tests](#tests) to pass and make sure they succeed
 - If it is all green and succeeded, mark PR as Ready for Review!
+
+![image](https://user-images.githubusercontent.com/48274410/208814461-651377c4-7a09-4e80-869a-ba9b955f05b2.png)
+
 - Update [project board](#project-board)
 
 > Sometimes, we nail it on the first try. If your PR is approved, go ahead and merge your PR!
 
 - Always use SQUASH AND MERGE. This keeps our commit history on ```main``` from getting out of control.
+
+![image](https://user-images.githubusercontent.com/48274410/208814495-f3c1d63a-5dc3-4cc7-87db-bf9b8e4d03e6.png)
 
 >Sometimes, we don't nail it on the first try, or the second, or the fiftieth, and thats okay. Some issues are hard. If you reviewer requests changes, you will have to review and make the changes, or discuss them with your reviewer. Essentially, you are reset to the top of the above list, except the pull request already exists. Any commits that you make to the issue branch will be recorded on the PR you already made. Make the changes, and rerequest a review when you are ready!
 
