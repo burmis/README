@@ -140,7 +140,7 @@ Something to consider is that the set up for this add-on is a little more extens
 
 Here is a screen shot of the add-on initial configuration panel.
 
-SCREENSHOT
+![image](https://user-images.githubusercontent.com/48274410/209076818-25c22ad8-d5da-41a5-9d33-b214a0753a1d.png)
 
 NOTE: The Root URL for burmis is https://api.github.com/burmis
 
@@ -152,6 +152,10 @@ NOTE: The Root URL for burmis is https://api.github.com/burmis
 
 - [Android Devices](https://play.google.com/store/apps/details?id=com.github.android)
 - [Apple Devices](https://apps.apple.com/us/app/github/id1477376905)
+
+Don't worry, there is dark mode. 
+
+![image](https://user-images.githubusercontent.com/48274410/209076882-80f718a2-1c3a-4cf4-a284-502560baba0b.png)
 
 ---
 
@@ -330,6 +334,9 @@ This is where the important specification follow, so please follow this process 
 ![image](https://user-images.githubusercontent.com/48274410/208814216-f9917ba6-3eda-4472-b1c1-e45dde8dceb5.png)
 
 - Edit the PR and fill out ALL of the relevant details. Thankfully, there is usually a template. Below is an example...
+
+![image](https://user-images.githubusercontent.com/48274410/209076710-deeb1cac-f120-4b79-9fa2-c2a35e24951e.png)
+
   - NOTE: If you use ```Fixes #issueNumber``` in your PR description your issue will automatically close when your branch is merged.
 - Select a reviewer
 
