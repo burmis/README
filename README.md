@@ -134,6 +134,8 @@ Never miss a change request again! Never miss a review request! This add-on will
 - Navigate to the browser "Add-ons" or "Extensions"
 - Search for and install Github Notifier
 
+![image](https://user-images.githubusercontent.com/48274410/209077061-33aa077b-4b2b-4944-b620-eda4a06e9ece.png)
+
 Something to consider is that the set up for this add-on is a little more extensive. You will need to create a Github token with notification privelages for public repo's, or a token with repo AND notification for private repositories. This is a fairly involved process but there is plenty of documentation online that I will link to below. Whether it be for this add-on or not, you should get familiar with tokens! They are very useful to know. 
 
 - [Creating a token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
