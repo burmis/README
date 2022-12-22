@@ -10,6 +10,9 @@ Within this readme is some tips and set up required to be productive with Burmis
   - [Gmail/Gchat/Gmeet](#gmailgchatgmeet)
   - [1Password](#1password)
   - [Toggl](#toggl)
+- [Extras](#extras)
+  - [Github Notifier](#github-notifier)
+  - [Github Mobile](#github-mobile)
 - [Payment Information](#payment-information)
   - [GST Number](#gst-number)
   - [Billing](#billing)
@@ -115,6 +118,40 @@ NOTE: Mistakes happen. Sometimes we get up from our PC, forget to pause our time
 This interface is also what you will want to use for invoicing purposes. It will display all of your tracked time in a calendar, which can easily be translated to a formal invoice for billing, as described below. 
 
 ![image](https://user-images.githubusercontent.com/48274410/208812562-395428ab-3013-45c1-8aaa-8e24d060eb13.png)
+
+---
+
+## Extras
+
+Here are some extra little things we use around the office to keep our workflow smooth!
+
+### Github Notifier
+
+> Github Notifier is another handy little browser extension that helps you keep on top of Github Notifications.
+
+Never miss a change request again! Never miss a review request! This add-on will allow your browser to notify you of Github notifications convienently. Once again, make sure to adjust steps to match your browser. 
+
+- Navigate to the browser "Add-ons" or "Extensions"
+- Search for and install Github Notifier
+
+Something to consider is that the set up for this add-on is a little more extensive. You will need to create a Github token with notification privelages for public repo's, or a token with repo AND notification for private repositories. This is a fairly involved process but there is plenty of documentation online that I will link to below. Whether it be for this add-on or not, you should get familiar with tokens! They are very useful to know. 
+
+- [Creating a token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+Here is a screen shot of the add-on initial configuration panel.
+
+SCREENSHOT
+
+NOTE: The Root URL for burmis is https://api.github.com/burmis
+
+---
+
+### Github Mobile
+
+> Github provides a handy little application for mobile devices. This allows you to recieve notifications while on the run! 
+
+- [Android Devices](https://play.google.com/store/apps/details?id=com.github.android)
+- [Apple Devices](https://apps.apple.com/us/app/github/id1477376905)
 
 ---
 
