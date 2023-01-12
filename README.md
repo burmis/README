@@ -6,33 +6,49 @@ Within this readme is some tips and set up required to be productive with Burmis
 
 ## Contents
 
-- [Accounts](#accounts)
-  - [Gmail/Gchat/Gmeet](#gmailgchatgmeet)
-  - [1Password](#1password)
-  - [Toggl](#toggl)
-- [Extras](#extras)
-  - [Github Notifier](#github-notifier)
-  - [Github Mobile](#github-mobile)
-- [Payment Information](#payment-information)
-  - [GST Number](#gst-number)
-  - [Billing](#billing)
-- [Code Standards](#code-standards)
-  - [End of File](#end-of-file)
-  - [End of Line](#end-of-line)
-  - [Code Golf](#dont-play-code-golf)
-  - [Prettier/Code Linting](#prettiercode-linting)
-  - [Workflow](#workflow)
-  - [Tests](#tests)
-  - [Issues](#issues)
-  - [Branching](#branching)
-  - [Pull Requests](#pull-requests)
-  - [Project Board](#project-board)
+- [Welcome to Burmis Studios!](#welcome-to-burmis-studios)
+  - [Contents](#contents)
+  - [Accounts](#accounts)
+    - [Github 2FA / Commit Signing](#github-2fa--commit-signing)
+    - [Gmail/Gchat/Gmeet](#gmailgchatgmeet)
+    - [1Password](#1password)
+    - [Toggl](#toggl)
+  - [Extras](#extras)
+    - [Github Notifier](#github-notifier)
+    - [Github Mobile](#github-mobile)
+  - [Payment Information](#payment-information)
+    - [GST Number](#gst-number)
+    - [Billing](#billing)
+  - [Code Standards](#code-standards)
+    - [End of File](#end-of-file)
+    - [End of Line](#end-of-line)
+    - [Don't Play Code Golf](#dont-play-code-golf)
+    - [Prettier/Code Linting](#prettiercode-linting)
+    - [Workflow](#workflow)
+    - [Tests](#tests)
+    - [Issues](#issues)
+    - [Branching](#branching)
+    - [Pull Requests](#pull-requests)
+    - [Project Board](#project-board)
 
 ---
 
 ## Accounts
 
-Burmis studios uses software solutions for most business tracking and access. Below is some information to help you get aquintated.  
+Burmis studios uses software solutions for most business tracking and access. Below is some information to help you get aquintated.
+
+### Github 2FA / Commit Signing
+
+> Burmis Studios required two-factor authentication on our developer's Github account as well as commit signing via GPG key. This is for extra security in our organizations repositories. 2FA should be set up regardless of Burmis, as it is in your best interest to protect your Github account. GPG signing keys help us keep the repo's secure by authenticating that commits actually came from who they should. If someone did get access to your account, it would be very difficult for them to commit malicious code to our code base.  
+
+2FA is a quick and easy process that I'm sure most are familiar with already. Below are some documents for setting it up with your Github account.
+
+- [Two-Factor Authentication](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+ 
+As GPG keys are a fairly involved process to set up, I will again refer to Githubs official documentation. You can configure git on your computer to automatically request a signing / password input so that you never forget. Below are some links to documentation that should help you get this set up!
+
+- [Commit Verification / Key Set-up](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+- [Using Key Automatically](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
 ### Gmail/Gchat/Gmeet
 ---
@@ -102,6 +118,10 @@ Once your account has been set up, you can begin tracking invoicable time as fol
 - You can now choose which project your task is related too
 - Select whether the time is billable or not (Most likely is)
 - Click Done!
+
+It is very important to not miss any description of tasks. If you do not have an explanation of why you logged hours, we have no way of telling the client why we are billing that time.
+
+Make sure you describe your time entries accurately!
 
 ![image](https://user-images.githubusercontent.com/48274410/208812512-af8ddea0-7567-4f36-aa65-50f3a178da72.png)
 
